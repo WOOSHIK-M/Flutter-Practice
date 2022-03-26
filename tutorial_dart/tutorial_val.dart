@@ -1,11 +1,9 @@
 // Hello World!
-void print_hello() 
-{
+void print_hello() {
   print("Hello Dart!");
 }
 
-void assign_val()
-{
+void assign_val() {
   /*
   Description
   
@@ -21,19 +19,18 @@ void assign_val()
   print(val2);
 
   var val3;
-  print(val3);  // null
+  print(val3); // null
 
   val3 = "test";
   val3 = 1;
 }
 
-void assign_data_type()
-{
+void assign_data_type() {
   int num1 = 2;
-  print(num1);  // 2
+  print(num1); // 2
 
   double num2 = 2.2;
-  print(num2);  // 2.2
+  print(num2); // 2.2
 
   String name = 'Dart';
   print("Hello " + name); // Hello Dart
@@ -42,8 +39,7 @@ void assign_data_type()
   print(wrong); // true
 }
 
-void list_practice()
-{
+void list_practice() {
   /*
   generations:
     List<Datatype> lst = [];
@@ -72,15 +68,16 @@ void list_practice()
   fruits.add("Apple");
   fruits.add("Banana");
   fruits.add("Orange");
-  print(fruits);  // [Apple, Banana, Orange]
+  print(fruits); // [Apple, Banana, Orange]
 
   fruits.removeAt(1);
   print(fruits);
 
-  print(fruits.join(","));  // Apple,Orange
+  print(fruits.join(",")); // Apple,Orange
 
   // where
-  print(fruits.where((fruit) => fruit.toLowerCase().indexOf('a') >= 0));  // (Apple, Orange)
+  print(fruits.where(
+      (fruit) => fruit.toLowerCase().indexOf('a') >= 0)); // (Apple, Orange)
 
   // forEach
   fruits.forEach((fruit) {
@@ -96,7 +93,7 @@ void list_practice()
     return 'My name is ${e}';
   });
   print(newFruits); // (My name is Apple, My name is Orange)
-  print(newFruits.toList());  // [My name is Apple, My name is Orange]
+  print(newFruits.toList()); // [My name is Apple, My name is Orange]
 
   // fold
   List<int> numbers = [1, 2, 3, 4, 5];
@@ -104,7 +101,7 @@ void list_practice()
     int sum = previousValue + element;
     return sum * 2;
   });
-  print(result);  // 114
+  print(result); // 114
 
   // reduce
   int total = numbers.reduce((value, element) {
@@ -124,9 +121,7 @@ void list_practice()
   // [index: 0 / value: 1, index: 1 / value: 2, index: 2 / value: 3, index: 3 / value: 4, index: 4 / value: 5]
 }
 
-
-void final_const()
-{
+void final_const() {
   /*
   Description
     - final: it has to be assigned when run-time.
@@ -138,11 +133,9 @@ void final_const()
   // it occur error
   // const DateTime now = DateTime.now();
   // print(now);
-
 }
 
-void string_interpolation()
-{
+void string_interpolation() {
   String name = "Dart";
   int num = 1;
 
@@ -150,8 +143,7 @@ void string_interpolation()
 }
 
 // call function
-void main()
-{
+void main() {
   /* 
   todo
     map - key, value
@@ -161,6 +153,6 @@ void main()
   // assign_val()
   // assign_data_type();
   // list_practice();
-  // final_const();  
+  // final_const();
   string_interpolation();
 }
