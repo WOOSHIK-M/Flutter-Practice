@@ -7,5 +7,5 @@ pre-commit:
       run: flutter format {staged_files} && git add {staged_files}
     linter:
       run: flutter analyze
-    tests:
-      run: flutter test
+    # tests:
+    #   run: flutter test
